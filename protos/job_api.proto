@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package bugrepro;
+
+service JobAPI {
+  rpc TrainJob(stream TrainJobRequest) returns (stream TrainJobResponse);
+};
+
+message TrainJobRequest {
+}
+
+message TrainJobResponse {
+}
